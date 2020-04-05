@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/ScopeProviderSample.A/ScopeProviderSample.A.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ScopeProviderSample.B/ScopeProviderSample.B.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ScopeProviderSample.C/ScopeProviderSample.C.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ScopeProviderSample.Sandbox/ScopeProviderSample.Sandbox.msd" folder="" />
     </projectModules>
   </component>
