@@ -21,13 +21,9 @@
       <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
         <reference id="8401916545537438643" name="kind" index="1dDu$A" />
       </concept>
-      <concept id="1159285995602" name="jetbrains.mps.lang.constraints.structure.NodeDefaultSearchScope" flags="ng" index="3EP7_v">
-        <child id="1159286114227" name="searchScopeFactory" index="3EP$qY" />
-      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213100494875" name="referent" index="1Mr941" />
-        <child id="1213101058038" name="defaultScope" index="1MtirG" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
@@ -35,14 +31,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1M2fIO" id="299w7tA$QRb">
-    <ref role="1M2myG" to="x97e:299w7tAzQvj" resolve="Item" />
-    <node concept="3EP7_v" id="299w7tA_d68" role="1MtirG">
-      <node concept="1dDu$B" id="299w7tA_d6c" role="3EP$qY">
-        <ref role="1dDu$A" to="x97e:299w7tAzQvj" resolve="Item" />
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="6rBnqncYgK4">
     <ref role="1M2myG" to="x97e:8oJR58_iRW" resolve="PropertyDeclarationReference" />
     <node concept="1N5Pfh" id="6rBnqncYgK5" role="1Mr941">

@@ -11,10 +11,16 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -95,16 +101,31 @@
         <ref role="2E7YVn" node="6rBnqncYpQb" resolve="spc2" />
       </node>
       <node concept="2E7YS$" id="2CLe$4YVLTb" role="2E7YVo">
-        <node concept="3cpWs3" id="1hN2MdAKbhe" role="2E7YSB">
-          <node concept="1azpad" id="1hN2MdAKbhx" role="3uHU7w">
-            <ref role="1azpac" node="6rBnqncYpQh" resolve="aBoolean" />
-          </node>
-          <node concept="3cpWs3" id="2CLe$4YWfzE" role="3uHU7B">
-            <node concept="3cmrfG" id="2CLe$4YWf9j" role="3uHU7B">
-              <property role="3cmrfH" value="1" />
+        <node concept="3cpWs3" id="1hN2MdAKiaa" role="2E7YSB">
+          <node concept="1eOMI4" id="1hN2MdAKibi" role="3uHU7w">
+            <node concept="10QFUN" id="1hN2MdAKibh" role="1eOMHV">
+              <node concept="1azpad" id="1hN2MdAKibg" role="10QFUP">
+                <ref role="1azpac" node="6rBnqncYpQe" resolve="anInteger" />
+              </node>
+              <node concept="10P55v" id="1hN2MdAKibG" role="10QFUM" />
             </node>
-            <node concept="1azpad" id="2CLe$4YWTeS" role="3uHU7w">
-              <ref role="1azpac" node="6rBnqncYpQe" resolve="anInteger" />
+          </node>
+          <node concept="3cpWs3" id="1hN2MdAKh3N" role="3uHU7B">
+            <node concept="1eOMI4" id="1hN2MdAKh4x" role="3uHU7B">
+              <node concept="10QFUN" id="1hN2MdAKh4w" role="1eOMHV">
+                <node concept="1azpad" id="1hN2MdAKh4v" role="10QFUP">
+                  <ref role="1azpac" node="2CLe$4YWOq1" resolve="aByte" />
+                </node>
+                <node concept="10Oyi0" id="1hN2MdAKh4D" role="10QFUM" />
+              </node>
+            </node>
+            <node concept="1eOMI4" id="1hN2MdAKh4c" role="3uHU7w">
+              <node concept="10QFUN" id="1hN2MdAKh4b" role="1eOMHV">
+                <node concept="1azpad" id="1hN2MdAKh4a" role="10QFUP">
+                  <ref role="1azpac" node="2CLe$4YWOpV" resolve="aDouble" />
+                </node>
+                <node concept="10Oyi0" id="1hN2MdAKh4m" role="10QFUM" />
+              </node>
             </node>
           </node>
         </node>
