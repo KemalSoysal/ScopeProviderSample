@@ -81,7 +81,7 @@
       <property role="IQ2ns" value="2470647120899506855" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
+      <ref role="20lvS9" to="tpce:fKQkHSB" resolve="PrimitiveDataTypeDeclaration" />
     </node>
     <node concept="PrWs8" id="L4kXUQVZJC" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
